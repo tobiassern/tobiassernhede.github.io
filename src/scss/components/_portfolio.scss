@@ -14,6 +14,20 @@
 				overflow: hidden;
 				text-overflow: ellipsis;
 			}
+			.portfolio-item-subtitle {
+				margin: 0;
+				font-size: 0.8rem;
+				position: relative;
+				margin-top: 5px;
+				&:before {
+					content: '';
+					border-top: 2px solid #333333;
+					position: absolute;
+					top: -2.5px;
+					left: 0;
+					width: 40px;
+				}
+			}
 			&:after {
 				top: 100%;
 				left: 50px;
