@@ -1,23 +1,45 @@
 {
     "portfolio": [
         {
+			"title" : "Mixxtape - Create playlists of songs you love",
+			"subtitle" : "Part of Udacity Fullstack Nano Degree",
+			"description": "A multi user blog with authentication functions. Developed to run on Google App Engine with Python and Webapp2.",
+			"projectType" : "Personal",
+			"websiteUrl" : "http://tobias-blog-143621.appspot.com/",
+			"githubUrl" : "https://github.com/tobiassernhede/multi_user_blog",
+			"languages" : ["python", "javascript", "jquery", "sass", "github"],
+			"img" : ""
+    	},
+        {
 			"title" : "Multi User Blog",
 			"subtitle" : "Part of Udacity Fullstack Nano Degree",
 			"description": "A multi user blog with authentication functions. Developed to run on Google App Engine with Python and Webapp2.",
 			"projectType" : "Personal",
 			"websiteUrl" : "http://tobias-blog-143621.appspot.com/",
 			"githubUrl" : "https://github.com/tobiassernhede/multi_user_blog",
-			"languages" : ["python", "javascript", "jquery", "sass", "github"]
+			"languages" : ["python", "javascript", "jquery", "sass", "github"],
+			"img" : ""
     	},
         {
-			"title" : "Website for Coach",
+			"title" : "Personal Website for a Personal Coach",
 			"subtitle" : "Kerstin Hjelm leadership & life coach",
 			"description": "A website for Kerstin Hjelm who is a leadership and life coach. Built a custom WordPress Theme using ACF.",
 			"projectType" : "Client",
 			"websiteUrl" : "http://www.kerstinhjelm.se/",
 			"githubUrl" : "",
-			"languages" : ["wordpress", "javascript", "jquery", "sass"]
+			"languages" : ["wordpress", "javascript", "jquery", "sass"],
+			"img" : "img/kerstin-hjelm-website.jpg"
         },
+       	{
+			"title" : "Tournament Result",
+			"subtitle" : "Part of Udacity Fullstack Nano Degree",
+			"description": "Project for learning more advanced SQL andadvanced SQL queries and how you should structure your tables and columns in order to achieve normalized design of the database.",
+			"projectType" : "Personal",
+			"websiteUrl" : "",
+			"githubUrl" : "https://github.com/tobiassernhede/Tournament-Results",
+			"languages" : ["python", "postgresql", "github"],
+			"img" : ""
+    	},
         {
 			"title" : "Online Magazine for Electrical Cars",
 			"subtitle" : "The Magazine Elbilen i Sverige",
@@ -25,7 +47,18 @@
 			"projectType" : "Client",
 			"websiteUrl" : "http://www.elbilen.org/",
 			"githubUrl" : "",
-			"languages" : ["wordpress", "javascript", "jquery", "sass"]
+			"languages" : ["wordpress", "javascript", "jquery", "sass"],
+			"img" : ""
+        },
+        {
+			"title" : "Business Website for Electrical Engineers",
+			"subtitle" : "Tekniska Lösningar",
+			"description": "A business website for a bunch of cool electrical engineers. Built the whole website around related content so visitors would always find something new to read. Built as a custom WordPress theme with ACF.",
+			"projectType" : "Client",
+			"websiteUrl" : "http://t-lab.se/",
+			"githubUrl" : "",
+			"languages" : ["wordpress", "javascript", "jquery", "sass"],
+			"img" : "img/tlab-website.jpg"
         }
     ]
 

@@ -57,8 +57,10 @@ jQuery(function($) {
 	        );
 	    },
     	renderedHandler: function (elements, data) {
-			$portfolioGrid.masonry( 'addItems', elements );
-			$portfolioGrid.masonry('layout');
+    		$portfolioGrid.masonry( 'addItems', elements );
+    		$portfolioGrid.imagesLoaded().progress( function() {
+			  $portfolioGrid.masonry('layout');
+			});
 		}
 	};
 

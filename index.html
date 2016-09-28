@@ -7,6 +7,7 @@
 	    <link rel="stylesheet" href="css/style.css">
 	    <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
 	    <script src="bower_components/knockout/dist/knockout.js"></script>
+	    <script src="app/imagesloaded.pkgd.min.js"></script>
 	    <script src="app/masonry.pkgd.min.js"></script>
 	    <script src="app/app.min.js"></script>
 	    <script type="text/babel" src="app/test.js"></script>
@@ -60,20 +61,26 @@
   					<div class="col-md-4 col-sm-6 col-xs-12 portfolio-item-wrap">
   						<div class="portfolio-item">
   							<div class="portfolio-item-title-wrap">
+  								<p class="portfolio-item-type"><span data-bind="text: projectType"></span> Project</p>
   								<h3 class="portfolio-item-title" data-bind="text: title"></h3>
   								<p class="portfolio-item-subtitle text-muted" data-bind="text: subtitle"></p>
   							</div>
+	  						<!-- ko if: img -->
+	  						<div class="portfolio-item-img-wrap">
+	  							<img data-bind="attr: {src: img}">
+	  						</div>
+	  						<!-- /ko -->
   							<div class="portfolio-item-content">
   								<p data-bind="text: description"></p>
   								<div class="portfolio-item-links">
   									<!-- ko if: websiteUrl -->
   									<span>
-  										<a data-bind="attr: { href: websiteUrl, title: title }" target="_blank">View Website</a>
+  										<a class="btn btn-sm btn-black" data-bind="attr: { href: websiteUrl, title: title }" target="_blank">View Website</a>
   									</span>
   									<!-- /ko -->
   									<!-- ko if: githubUrl -->
   									<span>
-  										<a data-bind="attr: { href: githubUrl, title: title }" target="_blank">View GitHub</a>
+  										<a class="btn btn-sm btn-black" data-bind="attr: { href: githubUrl, title: title }" target="_blank">View GitHub</a>
   									</span>
   									<!-- /ko -->
   								</div>
@@ -91,6 +98,9 @@
 									<!-- /ko -->
 									<!-- ko if: $data == 'jquery' -->
 									<i class="devicon-jquery-plain"></i>
+									<!-- /ko -->
+									<!-- ko if: $data == 'postgresql' -->
+									<i class="devicon-postgresql-plain"></i>
 									<!-- /ko -->
 									<!-- ko if: $data == 'sass' -->
 									<i class="devicon-sass-plain"></i>
