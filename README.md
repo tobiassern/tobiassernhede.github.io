@@ -5,7 +5,7 @@ Built with:
 Bootstrap 3 grid
 jQuery
 Sass
-React
+Knockout.js
 and some love
 
 ## License

@@ -1,0 +1,29 @@
+{
+    "portfolio": [
+        {
+			"title" : "Multi User Blog",
+			"description": "A multi user blog with authentication functions. Developed to run on Google App Engine with Python and Webapp2.",
+			"projectType" : "Personal",
+			"websiteUrl" : "http://tobias-blog-143621.appspot.com/",
+			"githubUrl" : "https://github.com/tobiassernhede/multi_user_blog",
+			"languages" : ["python", "javascript", "jquery", "sass", "github"]
+    	},
+        {
+			"title" : "Kerstin Hjelm Coach",
+			"description": "A website for Kerstin Hjelm who is a leadership and life coach. Built a custom WordPress Theme using ACF.",
+			"projectType" : "Client",
+			"websiteUrl" : "http://www.kerstinhjelm.se/",
+			"githubUrl" : "",
+			"languages" : ["wordpress", "javascript", "jquery", "sass"]
+        },
+        {
+			"title" : "Tidningen Elbilen i Sverige",
+			"description": "A magazine about electrical cars. Developed a custom theme for WordPress. Integrated the possibility to automatically share articles on Facebook.",
+			"projectType" : "Client",
+			"websiteUrl" : "http://www.elbilen.org/",
+			"githubUrl" : "",
+			"languages" : ["wordpress", "javascript", "jquery", "sass"]
+        }
+    ]
+
+}

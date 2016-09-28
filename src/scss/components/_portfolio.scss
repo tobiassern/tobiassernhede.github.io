@@ -4,7 +4,6 @@
 		margin-bottom: 30px;
 		background-color: #efefef;
 		transition: background-color 0.4s ease;
-		cursor: pointer;
 		.portfolio-item-title-wrap {
 			background-color: #ffffff;
 			padding: 15px;
@@ -35,14 +34,46 @@
 			.portfolio-item-lang {
 				font-size: 1.8rem;
 				border-top: 1px solid #333333;
-				margin-top: 15px;
+				margin-top: 10px;
 				.portfolio-item-lang-title {
 					font-size: 14px;
 				}
 			}
+			.portfolio-item-type {
+				display: inline-block;
+				background-color: #333333;
+				color: #ffffff;
+				@extend .small-text;
+				padding: 10px;
+				line-height: 0;
+				margin: 0;
+				border-radius: 5px;
+			}
+			.portfolio-item-links {
+				border-top: 1px solid #333333;
+				margin-top: 15px;
+				padding-top: 10px;
+				font-size: 0.8rem;
+				font-weight: bold;
+				span {
+					a {
+						text-decoration: none;
+						color: #333333;
+						&:hover {
+							text-decoration: underline;
+						}
+					}
+					&:before {
+							content: ' | ';
+						}
+					&:first-child:before {
+						content: '';
+					}
+				}
+			}
 		}
 		&:hover {
-			background-color: #ffffff;
+			//background-color: #ffffff;
 		}
 	}
 }

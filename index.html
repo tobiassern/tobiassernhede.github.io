@@ -5,10 +5,9 @@
 	    <title>Tobias Sernhede</title>
 	    <link rel="icon" type="image/png" href="img/ts-favicon.png">
 	    <link rel="stylesheet" href="css/style.css">
-	    <script src="bower_components/react/react.js"></script>
-	    <script src="bower_components/react/react-dom.js"></script>
-	    <script src="https://unpkg.com/babel-core@5.8.38/browser.min.js"></script>
 	    <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+	    <script src="bower_components/knockout/dist/knockout.js"></script>
+	    <script src="app/masonry.pkgd.min.js"></script>
 	    <script src="app/app.min.js"></script>
 	    <script type="text/babel" src="app/test.js"></script>
 	</head>
@@ -43,7 +42,7 @@
   		</section>
   		<section class="after-hero about-me">
   			<div class="container">
-  					<h2 class="text-center section-title">About me</h2>
+				<h2 class="text-center section-title">About me</h2>
   				<div class="row">
   					<div class="col-md-6 col-md-offset-3">
   						<p>Since I started working in digital marketing I have always been interested how everything fits togehter and that is when I got passionated about coding. Thanks to this I have a better understanding how everything fits together and works "behind the scenes". But I have also enabled myself to create awesome things with code and unleash my creativity in a whole new way.</p>
@@ -56,36 +55,57 @@
   				<h2 class="text-center section-title">Portfolio</h2>
   				<hr>
   				<p class="text-center section-sub-title">Some of the projects I have done</p>
-  				<div class="row">
-  					<div class="col-md-4 col-sm-6 col-xs-12">
+  				<div class="row portfolio-grid">
+  				<!-- ko foreach:{data: portfolioItems, afterRender: renderedHandler }-->
+  					<div class="col-md-4 col-sm-6 col-xs-12 portfolio-item-wrap">
   						<div class="portfolio-item">
   							<div class="portfolio-item-title-wrap">
-  								<h3 class="portfolio-item-title">Multi User Blog</h3>
+  								<h3 class="portfolio-item-title" data-bind="text: title"></h3>
   							</div>
   							<div class="portfolio-item-content">
-  								<p>A multi user blog with authentication functions</p>
+  								<p data-bind="text: description"></p>
+  								<div class="portfolio-item-links">
+  									<!-- ko if: websiteUrl -->
+  									<span>
+  										<a data-bind="attr: { href: websiteUrl, title: title }" target="_blank">View Website</a>
+  									</span>
+  									<!-- /ko -->
+  									<!-- ko if: githubUrl -->
+  									<span>
+  										<a data-bind="attr: { href: githubUrl, title: title }" target="_blank">View GitHub</a>
+  									</span>
+  									<!-- /ko -->
+  								</div>
 	  							<div class="portfolio-item-lang">
 									<p class="portfolio-item-lang-title text-muted small-text">Used in this project</p>
-									<i class="devicon-python-plain-wordmark"></i>
+									<div data-bind="foreach: languages">
+									<!-- ko if: $data == 'python' -->
+									<i class="devicon-python-plain"></i>
+									<!-- /ko -->
+									<!-- ko if: $data == 'wordpress' -->
+									<i class="devicon-wordpress-plain"></i>
+									<!-- /ko -->
+									<!-- ko if: $data == 'javascript' -->
 									<i class="devicon-javascript-plain"></i>
+									<!-- /ko -->
+									<!-- ko if: $data == 'jquery' -->
 									<i class="devicon-jquery-plain"></i>
-									<i class="devicon-sass-original"></i>
+									<!-- /ko -->
+									<!-- ko if: $data == 'sass' -->
+									<i class="devicon-sass-plain"></i>
+									<!-- /ko -->
+									<!-- ko if: $data == 'github' -->
 									<i class="devicon-github-plain"></i>
+									<!-- /ko -->
+									</div>
 								</div>
 							</div>
   						</div>
   					</div>
-  					<div class="col-md-4 col-sm-6 col-xs-12">
-  						<div class="portfolio-item">
-  							<div class="portfolio-item-title-wrap">
-  								<h3 class="portfolio-item-title">Multi User Blog Multi User Blog Multi User Blog</h3>
-  							</div>
-  						</div>
-  					</div>
+  				<!-- /ko -->
   				</div>
   			</div>
   		</section>
-  		<div id="example"></div>
   	</body>
   	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </html>
