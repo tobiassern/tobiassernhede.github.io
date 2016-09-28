@@ -17,7 +17,20 @@
   			<div class="site-branding">
   				Tobias Sernhede
   			</div>
-  			<a href="mailto:tobias@sernhede.com?subject=Hello Tobias!" class="btn btn-white btn-border float-right">Say Hello</a>
+  			<div class="site-header-right">
+	  			<div class="social-media">
+					<a href="https://www.linkedin.com/in/tobiassernhede" title="LinkedIn" target="_blank">
+						<span class="symbol">circlelinkedin</span>
+					</a>
+					<a href="https://www.facebook.com/tobias.sernhede" title="Facebook" target="_blank">
+						<span class="symbol">circlefacebook</span>
+					</a>
+					<a href="https://github.com/tobiassernhede" title="GitHub" target="_blank">
+						<span class="symbol">circlegithubalt</span>
+					</a>
+				</div>
+	  			<a href="mailto:tobias@sernhede.com?subject=Hello Tobias!" class="btn btn-white btn-border float-right">Say Hello</a>
+  			</div>
   		</header>
   		<section class="top-hero">
   			<div class="top-hero-inner">
@@ -27,17 +40,6 @@
 	  				</div>
 	  				<h1 class="hero-title">Tobias Sernhede</h1>
 	  				<h2 class="hero-sub-title">Digital marketer by day, <span>coder by night</span></h2>
-	  				<div class="social-media">
-	  					<a href="#" title="LinkedIn" target="_blank">
-		  					<span class="symbol">circlelinkedin</span>
-	  					</a>
-	  					<a href="#" title="Facebook" target="_blank">
-		  					<span class="symbol">circlefacebook</span>
-	  					</a>
-	  					<a href="#" title="GitHub" target="_blank">
-		  					<span class="symbol">circlegithubalt</span>
-		  				</a>
-	  				</div>
 	  			</div>
 	  		</div>
   		</section>
@@ -75,12 +77,12 @@
   								<div class="portfolio-item-links">
   									<!-- ko if: websiteUrl -->
   									<span>
-  										<a class="btn btn-sm btn-black" data-bind="attr: { href: websiteUrl, title: title }" target="_blank">View Website</a>
+  										<a class="btn btn-sm btn-black btn-border" data-bind="attr: { href: websiteUrl, title: title }" target="_blank">View Website</a>
   									</span>
   									<!-- /ko -->
   									<!-- ko if: githubUrl -->
   									<span>
-  										<a class="btn btn-sm btn-black" data-bind="attr: { href: githubUrl, title: title }" target="_blank">View GitHub</a>
+  										<a class="btn btn-sm btn-black" data-bind="attr: { href: githubUrl, title: title }" target="_blank"><i class="devicon-github-plain"></i> View GitHub</a>
   									</span>
   									<!-- /ko -->
   								</div>
@@ -89,6 +91,9 @@
 									<div data-bind="foreach: languages">
 									<!-- ko if: $data == 'python' -->
 									<i class="devicon-python-plain"></i>
+									<!-- /ko -->
+									<!-- ko if: $data == 'php' -->
+									<i class="devicon-php-plain"></i>
 									<!-- /ko -->
 									<!-- ko if: $data == 'wordpress' -->
 									<i class="devicon-wordpress-plain"></i>

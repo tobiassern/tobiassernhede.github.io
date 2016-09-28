@@ -32,3 +32,25 @@ section {
 		margin-bottom: 25px;
 	}
 }
+
+.social-media {
+	font-size: 2.4rem;
+	a {
+		text-decoration: none;
+		color: inherit;
+		vertical-align: middle;
+		display: inline-block;
+		height: 40px;
+		.symbol {
+			display: inline-block;
+			transition: transform 0.2s ease;
+			vertical-align: middle;
+			&:hover {
+				transform: scale(1.15);
+			}
+			&:active {
+				transform: scale(1.2);
+			}
+		}
+	}
+}

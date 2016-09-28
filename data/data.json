@@ -27,7 +27,7 @@
 			"projectType" : "Client",
 			"websiteUrl" : "http://www.kerstinhjelm.se/",
 			"githubUrl" : "",
-			"languages" : ["wordpress", "javascript", "jquery", "sass"],
+			"languages" : ["wordpress", "php", "javascript", "jquery", "sass"],
 			"img" : "img/kerstin-hjelm-website.jpg"
         },
        	{
@@ -47,7 +47,7 @@
 			"projectType" : "Client",
 			"websiteUrl" : "http://www.elbilen.org/",
 			"githubUrl" : "",
-			"languages" : ["wordpress", "javascript", "jquery", "sass"],
+			"languages" : ["wordpress", "php", "javascript", "jquery", "sass"],
 			"img" : ""
         },
         {
@@ -57,7 +57,7 @@
 			"projectType" : "Client",
 			"websiteUrl" : "http://t-lab.se/",
 			"githubUrl" : "",
-			"languages" : ["wordpress", "javascript", "jquery", "sass"],
+			"languages" : ["wordpress", "php", "javascript", "jquery", "sass"],
 			"img" : "img/tlab-website.jpg"
         }
     ]

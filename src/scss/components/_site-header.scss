@@ -30,4 +30,14 @@
 		margin-right: 15px;
 		vertical-align: middle;
 	}
+	.site-header-right {
+		display: inline-block;
+		float: right;
+		.social-media {
+			vertical-align: middle;
+			display: inline-block;;
+			color: #ffffff;
+			margin: 0 15px;
+		}
+	}
 }
