@@ -7,10 +7,7 @@
 	    <link rel="stylesheet" href="css/style.css">
 	    <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
 	    <script src="bower_components/knockout/dist/knockout.js"></script>
-	    <script src="app/imagesloaded.pkgd.min.js"></script>
-	    <script src="app/masonry.pkgd.min.js"></script>
 	    <script src="app/app.min.js"></script>
-	    <script type="text/babel" src="app/test.js"></script>
 	</head>
   	<body>
   		<header id="masthead" class="site-header container-fluid">
@@ -43,7 +40,7 @@
 	  			</div>
 	  		</div>
   		</section>
-  		<section class="after-hero about-me">
+  		<section class=" slant-before slant-after about-me">
   			<div class="container">
 				<h2 class="text-center section-title">About me</h2>
   				<div class="row">
@@ -90,28 +87,28 @@
 									<p class="portfolio-item-lang-title text-muted small-text">Used in this project</p>
 									<div data-bind="foreach: languages">
 									<!-- ko if: $data == 'python' -->
-									<i class="devicon-python-plain"></i>
+									<i class="devicon-python-plain" title="Python"></i>
 									<!-- /ko -->
 									<!-- ko if: $data == 'php' -->
-									<i class="devicon-php-plain"></i>
+									<i class="devicon-php-plain" title="PHP"></i>
 									<!-- /ko -->
 									<!-- ko if: $data == 'wordpress' -->
-									<i class="devicon-wordpress-plain"></i>
+									<i class="devicon-wordpress-plain" title="WordPress"></i>
 									<!-- /ko -->
 									<!-- ko if: $data == 'javascript' -->
-									<i class="devicon-javascript-plain"></i>
+									<i class="devicon-javascript-plain" title="Javascript"></i>
 									<!-- /ko -->
 									<!-- ko if: $data == 'jquery' -->
-									<i class="devicon-jquery-plain"></i>
+									<i class="devicon-jquery-plain" title="jQuery"></i>
 									<!-- /ko -->
 									<!-- ko if: $data == 'postgresql' -->
-									<i class="devicon-postgresql-plain"></i>
+									<i class="devicon-postgresql-plain" title="PostgreSQl"></i>
 									<!-- /ko -->
 									<!-- ko if: $data == 'sass' -->
-									<i class="devicon-sass-plain"></i>
+									<i class="devicon-sass-plain" title="Sass"></i>
 									<!-- /ko -->
 									<!-- ko if: $data == 'github' -->
-									<i class="devicon-github-plain"></i>
+									<i class="devicon-github-plain" title="GitHub"></i>
 									<!-- /ko -->
 									</div>
 								</div>

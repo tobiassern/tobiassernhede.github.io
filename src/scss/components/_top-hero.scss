@@ -41,13 +41,13 @@ $top-hero-min-height: 450px;
 			}
 			.hero-title {
 				margin: 0;
-				span {
-					color: $font-color;
-				}
 			}
 			.hero-sub-title {
 				font-size: 1.2rem;
 				letter-spacing: 2px;
+				span {
+					color: $font-color;
+				}
 			}
 		}
 	}

@@ -1,3 +1,5 @@
+// @codekit-prepend "imagesloaded.pkgd.min.js";
+// @codekit-prepend "masonry.pkgd.min.js";
 jQuery(function($) {
 	var didScroll;
 
