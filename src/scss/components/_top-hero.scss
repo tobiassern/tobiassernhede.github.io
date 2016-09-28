@@ -1,0 +1,66 @@
+$top-hero-height: 70vh;
+$top-hero-min-height: 450px;
+.top-hero {
+	position: relative;
+	height: $top-hero-height;
+	min-height: $top-hero-min-height;
+	.top-hero-inner {
+		z-index: -1;
+		position: fixed;
+		height: 70vh;
+		min-height: 400px;
+		width: 100%;
+		top: 0;
+		left: 0;
+		text-align: center;
+		background-image: linear-gradient(-132deg, #B4EC51 0%, #429321 100%);
+		color: #ffffff;
+		padding-bottom: 50px;
+		height: $top-hero-height;
+		min-height: $top-hero-min-height;
+		@media (min-width: $screen-sm-min) {
+			padding-bottom: 100px;
+		}
+		.container {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			height: 100%;
+			.hero-profile-img-wrap {
+				background-color: rgba(255,255,255,0.5);
+				border-radius: 100%;
+				padding: 4px;
+				font-size: 0;
+				.hero-profile-image {
+					border-radius: 100%;
+					position: relative;
+				}
+			}
+			.hero-title {
+				margin: 0;
+			}
+			.hero-sub-title {
+				font-size: 1.2rem;
+				letter-spacing: 5px;
+			}
+			.social-media {
+				font-size: 2.4rem;
+				a {
+					text-decoration: none;
+					color: inherit;
+					.symbol {
+						display: inline-block;
+						transition: transform 0.2s ease;
+						&:hover {
+							transform: scale(1.15);
+						&:active {
+							transform: scale(1.2);
+						}
+						}
+					}
+				}
+			}
+		}
+	}
+}

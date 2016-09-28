@@ -1,0 +1,23 @@
+.site-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 70px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	width: 100%;
+	z-index: 500;
+	.site-branding {
+		height: 100%;
+		background-image: url(../img/ts-logo.png);
+		background-image: url(../img/ts-logo.svg);
+		background-repeat: no-repeat;
+		background-size: contain;
+		text-indent: -100%;
+		overflow: hidden;
+		width: 40px;
+		display: inline-block;
+		margin-right: 15px;
+		vertical-align: middle;
+	}
+}
