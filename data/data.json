@@ -3,10 +3,10 @@
         {
 			"title" : "Mixxtape - Create playlists of songs you love",
 			"subtitle" : "Part of Udacity Fullstack Nano Degree",
-			"description": "A multi user blog with authentication functions. Developed to run on Google App Engine with Python and Webapp2.",
+			"description": "An awesome project that I will continue to work on and develop. Share songs and playlists easier with anyone.",
 			"projectType" : "Personal",
-			"websiteUrl" : "http://tobias-blog-143621.appspot.com/",
-			"githubUrl" : "https://github.com/tobiassernhede/multi_user_blog",
+			"websiteUrl" : "",
+			"githubUrl" : "https://github.com/tobiassernhede/MixxTape",
 			"languages" : ["python", "javascript", "jquery", "sass", "github"],
 			"img" : ""
     	},
@@ -21,7 +21,7 @@
 			"img" : ""
     	},
         {
-			"title" : "Personal Website for a Personal Coach",
+			"title" : "Personal website for a personal coach",
 			"subtitle" : "Kerstin Hjelm leadership & life coach",
 			"description": "A website for Kerstin Hjelm who is a leadership and life coach. Built a custom WordPress Theme using ACF.",
 			"projectType" : "Client",
@@ -41,7 +41,7 @@
 			"img" : ""
     	},
         {
-			"title" : "Online Magazine for Electrical Cars",
+			"title" : "Online magazine for electrical cars",
 			"subtitle" : "The Magazine Elbilen i Sverige",
 			"description": "A magazine about electrical cars. Developed a custom theme for WordPress. Integrated the possibility to automatically share articles on Facebook.",
 			"projectType" : "Client",
@@ -51,7 +51,7 @@
 			"img" : ""
         },
         {
-			"title" : "Business Website for Electrical Engineers",
+			"title" : "Business website for electrical engineers",
 			"subtitle" : "Tekniska Lösningar",
 			"description": "A business website for a bunch of cool electrical engineers. Built the whole website around related content so visitors would always find something new to read. Built as a custom WordPress theme with ACF.",
 			"projectType" : "Client",
@@ -59,6 +59,16 @@
 			"githubUrl" : "",
 			"languages" : ["wordpress", "php", "javascript", "jquery", "sass"],
 			"img" : "img/tlab-website.jpg"
+        },
+        {
+			"title" : "An awesome webdevelopment agency",
+			"subtitle" : "Different Agency",
+			"description": "Built and designed the website for my web agency. Focused on Swedish design, stylish and clean.",
+			"projectType" : "Personal",
+			"websiteUrl" : "http://differentagency.se/",
+			"githubUrl" : "",
+			"languages" : ["wordpress", "php", "javascript", "jquery", "sass"],
+			"img" : ""
         }
     ]
 
