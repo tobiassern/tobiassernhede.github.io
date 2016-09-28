@@ -1,0 +1,48 @@
+.portfolio {
+	background-color: #f7f7f7;
+	.portfolio-item {
+		margin-bottom: 30px;
+		background-color: #efefef;
+		transition: background-color 0.4s ease;
+		cursor: pointer;
+		.portfolio-item-title-wrap {
+			background-color: #ffffff;
+			padding: 15px;
+			position: relative;
+			.portfolio-item-title {
+				margin: 0;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+			&:after {
+				top: 100%;
+				left: 50px;
+				border: solid transparent;
+				content: " ";
+				height: 0;
+				width: 0;
+				position: absolute;
+				pointer-events: none;
+				border-color: rgba(255, 255, 255, 0);
+				border-top-color: #ffffff;
+				border-width: 15px;
+				margin-left: -15px;
+			}
+		}
+		.portfolio-item-content {
+			padding: 15px;
+			.portfolio-item-lang {
+				font-size: 1.8rem;
+				border-top: 1px solid #333333;
+				margin-top: 15px;
+				.portfolio-item-lang-title {
+					font-size: 14px;
+				}
+			}
+		}
+		&:hover {
+			background-color: #ffffff;
+		}
+	}
+}

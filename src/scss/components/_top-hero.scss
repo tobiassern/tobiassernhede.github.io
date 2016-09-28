@@ -5,7 +5,7 @@ $top-hero-min-height: 450px;
 	height: $top-hero-height;
 	min-height: $top-hero-min-height;
 	.top-hero-inner {
-		z-index: -1;
+		padding-top: 50px;
 		position: fixed;
 		height: 70vh;
 		min-height: 400px;
@@ -32,6 +32,8 @@ $top-hero-min-height: 450px;
 				border-radius: 100%;
 				padding: 4px;
 				font-size: 0;
+				line-height: 0;
+				margin-bottom: 15px;
 				.hero-profile-image {
 					border-radius: 100%;
 					position: relative;
@@ -39,10 +41,13 @@ $top-hero-min-height: 450px;
 			}
 			.hero-title {
 				margin: 0;
+				span {
+					color: $font-color;
+				}
 			}
 			.hero-sub-title {
 				font-size: 1.2rem;
-				letter-spacing: 5px;
+				letter-spacing: 2px;
 			}
 			.social-media {
 				font-size: 2.4rem;
