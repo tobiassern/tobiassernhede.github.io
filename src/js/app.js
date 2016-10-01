@@ -53,7 +53,7 @@ jQuery(function($) {
 	    portfolioItems: ko.observableArray([]),
 	    loadPortfolio: function () {
 	        var self = this;
-	        $.getJSON("data/data.min.json",function (data) {
+	        $.getJSON("data/data.json",function (data) {
 	                self.portfolioItems(data.portfolio);
 	            }
 	        );
