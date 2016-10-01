@@ -11,6 +11,16 @@
 			"img" : ""
     	},
         {
+			"title" : "Memory Game",
+			"subtitle" : "A fun memory game in vanilla javascript",
+			"description": "Built a memory game built with only vanilla javascript and no libraries in order to refrain from using jQuery. Built using an MCV architecture.",
+			"projectType" : "Personal",
+			"websiteUrl" : "https://tobiassernhede.github.io/Memory-Game/",
+			"githubUrl" : "https://github.com/tobiassernhede/Memory-Game",
+			"languages" : ["javascript", "sass", "github"],
+			"img" : ""
+    	},
+        {
 			"title" : "Multi User Blog",
 			"subtitle" : "Part of Udacity Fullstack Nano Degree",
 			"description": "A multi user blog with authentication functions. Developed to run on Google App Engine with Python and Webapp2.",
