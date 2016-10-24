@@ -1,6 +1,16 @@
 {
     "portfolio": [
         {
+			"title" : "Watchit - Watchlist for Movies",
+			"subtitle" : "A fun project for me in order to learn Vue.js",
+			"description": "Right now I only use this to learn Vue.js, havn't developed any real backend and it is just built with javascript and Vue.js",
+			"projectType" : "Personal",
+			"websiteUrl" : "http://sernhede.com/watchit",
+			"githubUrl" : "https://github.com/tobiassernhede/Watchit---Watchlist-for-movies",
+			"languages" : ["javascript", "jquery", "bower", "sass", "github"],
+			"img" : ""
+    	},
+        {
 			"title" : "Mixxtape - Create playlists of songs you love",
 			"subtitle" : "Part of Udacity Fullstack Nano Degree",
 			"description": "An awesome project that I will continue to work on and develop. Share songs and playlists easier with anyone.",
