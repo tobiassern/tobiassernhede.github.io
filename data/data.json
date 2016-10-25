@@ -1,6 +1,16 @@
 {
     "portfolio": [
         {
+			"title" : "Frontend Developer Quiz",
+			"subtitle" : "As I am currently looking for a developer job I have to brush up on my ability to remember everything without using Google.",
+			"description": "Another project in order to learn Vue.js better",
+			"projectType" : "Personal",
+			"websiteUrl" : "https://tobiassernhede.github.io/Frontend-Developer-Quiz/",
+			"githubUrl" : "https://github.com/tobiassernhede/Frontend-Developer-Quiz",
+			"languages" : ["javascript", "bower", "sass", "github"],
+			"img" : ""
+    	},
+        {
 			"title" : "Watchit - Watchlist for Movies",
 			"subtitle" : "A fun project for me in order to learn Vue.js",
 			"description": "Right now I only use this to learn Vue.js, havn't developed any real backend and it is just built with javascript and Vue.js",
